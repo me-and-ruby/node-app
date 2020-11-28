@@ -29,6 +29,6 @@ app.use(function(request, response,next) {
    next();
  });
 
-http.createServer(app).listen(port,function(){
+app.listen(port,function(){
   console.log('App listening on port 3000...')
 });
