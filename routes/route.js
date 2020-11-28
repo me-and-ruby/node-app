@@ -18,16 +18,8 @@ route.get("/", function(request, response) {
 
  //post contact info
  route.post("/contact", function(request, response) {
-  console.log("post request coming ......")
-  if(request.body.name==undefined){
-    response.end("Bad request")
-    console.log("bad request")
-  }else{
-    console.log(request.body.name);
-  }
+  console.log("Posting")
   
-  
-
 
  });
 
