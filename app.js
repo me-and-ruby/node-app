@@ -15,6 +15,7 @@ app.use(express.static(publicPath));
 
 app.use('/', route);
 
+const port= process.env.port || 3000;
 
 //middleware called only when no page available
 app.use(function(request, response,next) {
@@ -28,6 +29,6 @@ app.use(function(request, response,next) {
    next();
  });
 
-http.createServer(app).listen(3000,function(){
+http.createServer(app).listen(port,function(){
   console.log('App listening on port 3000...')
 });
